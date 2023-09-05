@@ -1,15 +1,22 @@
 class contadorOcurrencias {
-   verificarOcurrencias(palabra)
+   convertirMinuscula(palabra)
    {    
-        let palabraMinuscula = palabra.toLowerCase(); 
-        //let palabra2 = palabraMinuscula.slice("/");
-        //let cont = [];
-        //for (let letra of palabra2)
-        //{
-         //   cont.push(letra);
+    let palabraMinuscula = palabra.toLowerCase(); 
+       return palabraMinuscula;
+   }
 
-        //}
-        return palabraMinuscula;
+
+   verificarOcurrencias(palabra)
+   {
+    let palabra2 = this.convertirMinuscula(palabra);
+    let dividirPalabra = palabra2.slice("/");
+    let palabraFragmentada = [];
+    for (let letra of dividirPalabra)
+    {
+        palabraFragmentada.push(letra);
+
+    }
+    return palabraFragmentada;
    }
 }
 
