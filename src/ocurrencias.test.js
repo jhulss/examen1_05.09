@@ -3,9 +3,9 @@ import contadorOcurrencias from "./contador";
 
 describe("Contar ocurrencias", () => {
   
-  it("deberia sumar dos numeros", () => {
+  it("deberia retornar la palabra ingresada", () => {
     const contar = new contadorOcurrencias();
-    expect(contar.ocurrencias("hola")).toEqual(2);
+    expect(contar.ocurrencias("hola")).toEqual("hola");
   });
 
   
